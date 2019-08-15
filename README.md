@@ -1,8 +1,11 @@
-# initdemo
+# ReadHub-ImitationSite
 
-> A Vue.js project
+> An Imitation Site of ReadHub, building upon the official API(https://api.readhub.cn/topic)
+
+>一个借助ReadHub官方API实现的仿站 
 
 ## Build Setup
+### Dev Environment（处于开发环境，未打包）
 
 ``` bash
 # install dependencies
@@ -17,5 +20,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![预览](https://raw.githubusercontent.com/linbudu599/ReadHub-ImitationSite/master/preview/preview_01.gi###f)
+### Problem to be solved: Page flashs when changing the plate.
+### 切换板块时页面会闪烁 且暂时不知如何通过样式来解决 接下来会尝试修复
