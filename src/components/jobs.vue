@@ -46,7 +46,6 @@ export default {
   mounted() {
     var _this = this
     this.axiosDeal('jobs', _this)
-    console.log(this.detail)
   },
   computed: {
     // salary(lower, upper) {

@@ -6,8 +6,7 @@
           <img src="./assets/readhub_logo@2x.e5b95388.png" alt="logo" />
         </a>
         <a
-          href="javascript:void(0)"
-          v-for="nav in routers"
+          v-for='nav in routers'
           @click="routerChange(nav.router,nav.index)"
           :key="nav.router"
           :class="{'chosendNav':chosendNav == nav.index}"
@@ -64,7 +63,6 @@ export default {
     }
   },
   created() {
-    console.log('App.vue created')
     let _this = this
     let currentDots = this.routers.findIndex((item, index) => {
       return item.router == _this.$route.name

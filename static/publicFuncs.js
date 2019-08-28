@@ -14,13 +14,13 @@ const timeBefore = function(currentDate, date, publishDate) {
         //计算相差秒数
         let leftMs_minute = leftMs_hour % (60 * 1000); //计算分钟数后剩余的毫秒数
         let seconds = Math.round(leftMs_minute / 1000);
-        return seconds + "秒前";
+        return seconds + '秒前';
       }
-      return minutes + "分钟前";
+      return minutes + '分钟前';
     }
-    return hours + "小时前";
+    return hours + '小时前';
   }
-  return days + "天前";
+  return days + '天前';
 };
 
 const currentDots = function(arr, router) {
@@ -28,17 +28,15 @@ const currentDots = function(arr, router) {
     return item.router == router;
   });
 };
-import axios from "axios";
+import axios from 'axios';
 const axiosDeal = function(routerName, _this) {
-  if (routerName == "topic" || routerName == "jobs") {
+  if (routerName == 'topic' || routerName == 'jobs') {
     axios({
       url: `/${routerName}`
     })
       .then(res => {
         _this.detail = res.data.data;
-        _this.$parent.loading = "finished";
-        console.log("test");
-        console.log(res);
+        _this.$parent.loading = 'finished';
       })
       .catch(err => {
         console.error(err);
@@ -50,7 +48,7 @@ const axiosDeal = function(routerName, _this) {
     })
       .then(res => {
         _this.detail = res.data.data;
-        _this.$parent.loading = "finished";
+        _this.$parent.loading = 'finished';
         // console.log(res);
       })
       .catch(err => {
@@ -83,7 +81,7 @@ const confirmHashVal = function(hash, _this) {
     })
   ) {
     _this.$router.push({
-      path: "/error"
+      path: '/error'
     });
   }
 };

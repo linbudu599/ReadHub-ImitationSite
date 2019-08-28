@@ -38,7 +38,6 @@ export default {
   // mounted(){
   // },
   mounted() {
-    console.log((this.$parent.$refs.main.style.width = '960px'))
     // this.$parent.$refs.main.clientWidth = '960px'
     let id = this.$route.params.pathMatch
     this.itemDetails = JSON.parse(sessionStorage.getItem(id))

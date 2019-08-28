@@ -53,7 +53,6 @@ export default {
     errRouter
   },
   created() {
-    console.log('topic created')
     let _this = this
     this.currentDate = Date.now()
     this.axiosDeal(this.$route.name, _this)
@@ -73,8 +72,6 @@ export default {
     this.$parent._data.showSponser = true
   },
   mounted() {
-    console.log((this.$parent.$refs.main.style.width = '600px'))
-    console.log('topic mounted')
     window.addEventListener('scroll', this.throttle(this.handleUpdate, 1000))
     let routers = this.routers
     let _this = this
@@ -185,7 +182,6 @@ export default {
         this.$router.push({
           path: `/topic/${item.id}`
         })
-        console.log(item.title)
         sessionStorage.setItem(item.id, JSON.stringify(item))
         this.$parent._data.showSponser = false
       } else {
